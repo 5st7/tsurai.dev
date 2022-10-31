@@ -14,7 +14,7 @@ import (
 )
 
 func main() {
-    username := "test"
+        username := "test"
 	u, _ := user.Lookup(username)
 
         uid, _ := strconv.Atoi(u.Uid)
