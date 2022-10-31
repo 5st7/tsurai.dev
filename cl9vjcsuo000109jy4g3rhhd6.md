@@ -17,8 +17,8 @@ func main() {
     username := "test"
 	u, _ := user.Lookup(username)
 
-    uid, _ := strconv.Atoi(u.Uid)
-    gid, _ := strconv.Atoi(u.Gid)
+        uid, _ := strconv.Atoi(u.Uid)
+        gid, _ := strconv.Atoi(u.Gid)
 
 	cmd := exec.Command("whoami")
 	cmd.SysProcAttr = &syscall.SysProcAttr{}
